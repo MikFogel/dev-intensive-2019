@@ -20,4 +20,17 @@ object Utils {
 
         return Pair(firstName, lastName)
     }
+
+    fun toInitials(firstName: String?, lastName:String?): String? {
+        var initials: String = ""
+
+        if (firstName != null && firstName.trim().isNotEmpty()) initials += firstName[0].toUpperCase()
+        if (lastName != null && lastName.trim().isNotEmpty()) initials += lastName[0].toUpperCase()
+
+        if (initials.length == 0) {
+            return null
+        } else {
+            return initials
+        }
+    }
 }
