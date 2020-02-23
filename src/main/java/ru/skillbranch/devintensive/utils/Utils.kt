@@ -4,6 +4,10 @@ enum class TypeMessage {
     IMAGE, TEXT
 }
 
+enum class TimeUnit {
+    SECOND, MINUTE, HOUR, DAY
+}
+
 object Utils {
     fun parseFullName(fullName: String?) : Pair<String?, String?> {
 
